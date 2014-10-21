@@ -44,22 +44,22 @@ int main(){
     deque<string> inputQ;
     
     while(grab != NULL){
-        //argv[numTerms] = new char[10];
-        //argv[numTerms] = grab;
-        //cout << grab << endl;
         inputQ.push_back(string(grab));
         grab = strtok(NULL," ");
     }
  
-    int numTerms;
+    int numTerms = 0;
     string chkInp;
     int delEnd = 0;
+    deque<string>::iterator itr = inputQ.begin();
+    bool cont = true;
 
-    for(deque<string>::iterator itr = inputQ.begin(); itr != inputQ.end(); itr++){
-        //cout << *itr << endl;
+    while(cont){
+        
         numTerms++;
         chkInp = *itr;
         bool conChk;
+        bool run = false;
 
         if(chkInp == ";" || chkInp == "||" || chkInp == "&&"){
             conChk = true;
@@ -70,8 +70,17 @@ int main(){
         }
 
         if(numTerms == inputQ.size() || conChk){
-            cout << "numterms: " << numTerms << endl;
+            
             char* argv[numTerms+1];
+            
+            if(numTerms == inputQ.size()){
+                
+                if(conChk && chkInp != ";"){
+                    cout << "*ERROR last command not run, check connector useage*" << endl;
+                    break;
+                }
+                cont =  false;
+            }
 
             if(conChk){
                 numTerms--;
@@ -81,7 +90,6 @@ int main(){
             for(int i = 0;i < numTerms; i++){
                 argv[i] = new char[inputQ[i].size()+1];
                 strcpy(argv[i],inputQ[i].c_str());
-                //cout << argv[i] << endl;
             }
             
             argv[numTerms] = NULL;
@@ -96,7 +104,7 @@ int main(){
 		        perror("fork");
 	        }
 	        else if(pid == 0){
-		        execvp(argv[0],argv);
+                execvp(argv[0],argv);
 		        perror("execvp");
 	        }
 	        else{
@@ -117,15 +125,23 @@ int main(){
             //cout << "7: " << argv[7] << endl;
             //cout << "8: " << argv[8] << endl;
             //cout << "9: " << argv[9] << endl;
-            cout << "size: " << inputQ.size() << endl;
+            //cout << "size: " << inputQ.size() << endl;
 
-            for(int k = 0; k < inputQ.size(); k++){
-                cout << inputQ[k] << endl;
+            //for(int k = 0; k < inputQ.size(); k++){
+            //    cout << inputQ[k] << endl;
             
-            }
+            //}
 
-            //itr = inputQ.begin();
+            itr = inputQ.begin();
+            run = true;
+            delEnd = 0;
+            numTerms = 0;
         }
+
+        if(!run){
+            itr++;
+        }
+
 
     }
 
