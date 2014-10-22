@@ -1,0 +1,75 @@
+Script started on Tue 21 Oct 2014 11:05:17 PM PDT
+]0;ziya@ziya-laptop: ~/CS11/rshell/srcziya@ziya-laptop:~/CS11/rshell/src$ exit./a.out
+getlogin_r: No such process
+@ziya-laptop$ ls
+a.out  exec  rshell.cpp
+@ziya-laptop$ ls -l
+total 44
+-rwxr-xr-x 1 ziya ziya 32779 Oct 21 23:05 a.out
+-rw-r--r-- 1 ziya ziya     0 Oct 21 23:05 exec
+-rw-r--r-- 1 ziya ziya  5890 Oct 21 21:24 rshell.cpp
+@ziya-laptop$ ls;pwd
+a.out  exec  rshell.cpp
+/home/ziya/CS11/rshell/src
+@ziya-laptop$ ls                    ;                  pwd            ; ls -l
+a.out  exec  rshell.cpp
+/home/ziya/CS11/rshell/src
+total 44
+-rwxr-xr-x 1 ziya ziya 32779 Oct 21 23:05 a.out
+-rw-r--r-- 1 ziya ziya     0 Oct 21 23:05 exec
+-rw-r--r-- 1 ziya ziya  5890 Oct 21 21:24 rshell.cpp
+@ziya-laptop$ ls;;;;;;;;;;;;;;pwd
+a.out  exec  rshell.cpp
+/home/ziya/CS11/rshell/src
+@ziya-laptop$ ls -l #comment
+total 44
+-rwxr-xr-x 1 ziya ziya 32779 Oct 21 23:05 a.out
+-rw-r--r-- 1 ziya ziya     0 Oct 21 23:05 exec
+-rw-r--r-- 1 ziya ziya  5890 Oct 21 21:24 rshell.cpp
+@ziya-laptop$ echo hi
+hi
+@ziya-laptop$ echo hi; ||pwd
+hi
+@ziya-laptop$ false ||pwd
+/home/ziya/CS11/rshell/src
+@ziya-laptop$ true||pwd
+@ziya-laptop$ pwd &&ls
+/home/ziya/CS11/rshell/src
+a.out  exec  rshell.cpp
+@ziya-laptop$ ls  pwd||     false||pwd&&ls
+/home/ziya/CS11/rshell/src
+a.out  exec  rshell.cpp
+@ziya-laptop$ false                  || pwd&&ls;pwd
+/home/ziya/CS11/rshell/src
+a.out  exec  rshell.cpp
+/home/ziya/CS11/rshell/src
+@ziya-laptop$ false || false || pwd
+/home/ziya/CS11/rshell/src
+@ziya-laptop$ false     ls  ; pwd ;ls -a;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+a.out  exec  rshell.cpp
+/home/ziya/CS11/rshell/src
+.  ..  a.out  exec  rshell.cpp
+@ziya-laptop$ ls||pwd
+a.out  exec  rshell.cpp
+@ziya-laptop$ ls&&    true || pwd && ls
+@ziya-laptop$ pwd   false || pwd && ls -a || pwd
+/home/ziya/CS11/rshell/src
+.  ..  a.out  exec  rshell.cpp
+@ziya-laptop$ ls    ls || pwd || ls || pwd
+a.out  exec  rshell.cpp
+@ziya-laptop$ ls &&pwd&&ls;pwd
+a.out  exec  rshell.cpp
+/home/ziya/CS11/rshell/src
+a.out  exec  rshell.cpp
+/home/ziya/CS11/rshell/src
+@ziya-laptop$ ls  ^[OM^[OM          false||pwd&& l  ls
+/home/ziya/CS11/rshell/src
+a.out  exec  rshell.cpp
+@ziya-laptop$ false ||        false     pwd&&ls|   false||pwd   ls
+/home/ziya/CS11/rshell/src
+a.out  exec  rshell.cpp
+@ziya-laptop$ pwd     exit
+]0;ziya@ziya-laptop: ~/CS11/rshell/srcziya@ziya-laptop:~/CS11/rshell/src$ exit
+exit
+
+Script done on Tue 21 Oct 2014 11:14:46 PM PDT
