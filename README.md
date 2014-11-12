@@ -10,6 +10,7 @@ RUNNING:
     bin/rshell
 
 BUGS/KNOWN ISSUE/COMMENTS:
+    
     1. Does not show username when script is run before rshell.
     
     2. If a connector stops the running of the connecting command any commands placed after ; will
@@ -23,4 +24,12 @@ BUGS/KNOWN ISSUE/COMMENTS:
 
     6. Entering only a comment will cause a seg fault, comments must be placed after input.
 
-    7. Many more.
+    7. ls -R parameter does not function.
+
+    8. ls -l produces lstat errors on certain files
+
+    9. ls will notify of undefined parameters
+    
+    10.ls output is not ordered
+    
+    11. Many more.
