@@ -98,7 +98,7 @@ void method2(int argc, char*argv[]){
                 perror("open");
        }
 
-                void* buf;
+                char buf[BUFSIZ];
 
                 while(int readNum = read(fdi,buf,1) > 0){
                         int writeChk = write(fdo,buf,1);
@@ -131,8 +131,14 @@ int main(int argc, char*argv[])
 	double eTime;
 	t.start();
 	
-	if(flag == "-t")
+	if(flag[0] == '-')
 	{
+		string input;
+		cout << "Warning, this program will remove the file provided in argv[2]" << endl
+		<< "press 'y' and then enter to continue: " << endl;
+		cin >> input;
+		if(input != "y")		//exit program if input does not equal y
+			return 0;
 		method1(argc,argv);
 		t.elapsedWallclockTime(eTime);
 		cout << "Wallclock Time: " << eTime << endl;
@@ -143,10 +149,13 @@ int main(int argc, char*argv[])
 		t.elapsedSystemTime(eTime);
 		cout << "System Time: " << eTime << endl;
 		
+		//clear file
+		if( remove( argv[2] ) != 0 )
+		    perror( "Error deleting file" );
 		Timer t2;
 		double eTime2;
 		t2.start();
-
+		
 		method2(argc,argv);
 		t.elapsedWallclockTime(eTime2);
 		cout << "Wallclock Time: " << eTime2 << endl;
@@ -156,7 +165,9 @@ int main(int argc, char*argv[])
 
 		t.elapsedSystemTime(eTime2);
 		cout << "System Time: " << eTime2 << endl;
-
+		//clear file
+		if( remove( argv[2] ) != 0 )
+			perror( "Error deleting file" );
 		Timer t3;
 		double eTime3;
 		t3.start();
