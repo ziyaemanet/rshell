@@ -1,0 +1,186 @@
+Script started on Tue 11 Nov 2014 11:32:42 PM PST
+]0;ziya@ziya-laptop: ~/CS100/rshell/srcziya@ziya-laptop:~/CS100/rshell/src$ exitscript stoptop[K./a.out -a -af[3PRba[Kla /[K-la /[1P /home .[Ka/ /home -a[K[K[Kg++ -Wall -Werror -ansi -pedantic ls.cpp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cscript ls[Kg++ -Wall -Werror -ansi -pedantic ls.cpp
+]0;ziya@ziya-laptop: ~/CS100/rshell/srcziya@ziya-laptop:~/CS100/rshell/src$ g++ -Wall -Werror -ansi -pedantic ls.cpp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kscript stoptop[K./a.out -a -af[3PRba[Kla /[K-la /[1P /home .[Ka/ /home -a[K[K[Kg++ -Wall -Werror -ansi -pedantic ls.cpp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./a.out[K
+
+.:
+a.out  ls.cpp  test  ls  rshell.cpp  
+]0;ziya@ziya-laptop: ~/CS100/rshell/srcziya@ziya-laptop:~/CS100/rshell/src$ ./a.outg++ -Wall -Werror -ansi -pedantic ls.cpp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kscript stoptop[K./a.out -a -af[3PRba[Kla /[K-la /[1P /home .[Ka/ /home -a[K[K[K /
+
+/:
+initrd.img  run  dev  root  usr  lib64  var  boot  lib  selinux  tmp  bin  sbin  opt  mnt  home  proc  vmlinuz  sys  lost+found  etc  srv  media  
+]0;ziya@ziya-laptop: ~/CS100/rshell/srcziya@ziya-laptop:~/CS100/rshell/src$ ./a.out /home
+
+/home:
+ziya  
+]0;ziya@ziya-laptop: ~/CS100/rshell/srcziya@ziya-laptop:~/CS100/rshell/src$ ./a.out /home[K[K[K[K[K-l
+
+.:
+-rwxr-xr-x 1 ziya ziya 31587 Nov 11 23:32 a.out
+-rw-r--r-- 1 ziya ziya 11549 Nov 11 23:14 ls.cpp
+drwxr-xr-x 4 ziya ziya 4096 Nov 11 23:31 test
+-rw-r--r-- 1 ziya ziya 0 Nov 11 23:32 ls
+-rw-r--r-- 1 ziya ziya 5890 Oct 21 23:42 rshell.cpp
+
+total 56
+]0;ziya@ziya-laptop: ~/CS100/rshell/srcziya@ziya-laptop:~/CS100/rshell/src$ ./a.out -l[Ka
+
+.:
+..  a.out  .  ls.cpp  test  ls  rshell.cpp  
+]0;ziya@ziya-laptop: ~/CS100/rshell/srcziya@ziya-laptop:~/CS100/rshell/src$ ./a.out -al
+
+.:
+drwxr-xr-x 5 ziya ziya 4096 Nov 11 23:23 ..
+-rwxr-xr-x 1 ziya ziya 31587 Nov 11 23:32 a.out
+drwxr-xr-x 3 ziya ziya 4096 Nov 11 23:32 .
+-rw-r--r-- 1 ziya ziya 11549 Nov 11 23:14 ls.cpp
+drwxr-xr-x 4 ziya ziya 4096 Nov 11 23:31 test
+-rw-r--r-- 1 ziya ziya 0 Nov 11 23:32 ls
+-rw-r--r-- 1 ziya ziya 5890 Oct 21 23:42 rshell.cpp
+
+total 64
+]0;ziya@ziya-laptop: ~/CS100/rshell/srcziya@ziya-laptop:~/CS100/rshell/src$ ./a.out -al[K -l
+
+.:
+drwxr-xr-x 5 ziya ziya 4096 Nov 11 23:23 ..
+-rwxr-xr-x 1 ziya ziya 31587 Nov 11 23:32 a.out
+drwxr-xr-x 3 ziya ziya 4096 Nov 11 23:32 .
+-rw-r--r-- 1 ziya ziya 11549 Nov 11 23:14 ls.cpp
+drwxr-xr-x 4 ziya ziya 4096 Nov 11 23:31 test
+-rw-r--r-- 1 ziya ziya 0 Nov 11 23:32 ls
+-rw-r--r-- 1 ziya ziya 5890 Oct 21 23:42 rshell.cpp
+
+total 64
+]0;ziya@ziya-laptop: ~/CS100/rshell/srcziya@ziya-laptop:~/CS100/rshell/src$ ./a.out -a -l -r[KR
+
+.:
+drwxr-xr-x 5 ziya ziya 4096 Nov 11 23:23 ..
+-rwxr-xr-x 1 ziya ziya 31587 Nov 11 23:32 a.out
+drwxr-xr-x 3 ziya ziya 4096 Nov 11 23:32 .
+-rw-r--r-- 1 ziya ziya 11549 Nov 11 23:14 ls.cpp
+drwxr-xr-x 4 ziya ziya 4096 Nov 11 23:31 test
+-rw-r--r-- 1 ziya ziya 0 Nov 11 23:32 ls
+-rw-r--r-- 1 ziya ziya 5890 Oct 21 23:42 rshell.cpp
+
+total 64
+]0;ziya@ziya-laptop: ~/CS100/rshell/srcziya@ziya-laptop:~/CS100/rshell/src$ ./a.out -a -l -R[K[K[K[K[K[K[KR
+
+.:
+a.out  ls.cpp  test  ls  rshell.cpp  
+]0;ziya@ziya-laptop: ~/CS100/rshell/srcziya@ziya-laptop:~/CS100/rshell/src$ ./a.out -Ra -l -R[K[K[K[K[K[K[K[K/ /home
+
+/:
+initrd.img  run  dev  root  usr  lib64  var  boot  lib  selinux  tmp  bin  sbin  opt  mnt  home  proc  vmlinuz  sys  lost+found  etc  srv  media  
+
+/home:
+ziya  
+]0;ziya@ziya-laptop: ~/CS100/rshell/srcziya@ziya-laptop:~/CS100/rshell/src$ ./a.out / /home /dev
+
+/:
+initrd.img  run  dev  root  usr  lib64  var  boot  lib  selinux  tmp  bin  sbin  opt  mnt  home  proc  vmlinuz  sys  lost+found  etc  srv  media  
+
+/home:
+ziya  
+
+/dev:
+hidraw0  vcsa63  vcs63  vcsa7  vcs7  log  xconsole  loop7  loop6  loop5  loop4  loop3  loop2  loop1  shm  vcsa6  vcs6  vcsa5  vcs5  vcsa4  vcs4  vcsa3  vcs3  vcsa2  vcs2  fb0  root  dri  dvdrw  dvd  cdrw  cdrom  watchdog  sndstat  rfkill  MAKEDEV  snd  uinput  autofs  cpu  loop0  disk  block  sg1  sg0  sda5  sda2  sda1  sr0  sda  bsg  fw0  rtc  bus  char  mapper  ppp  net  loop-control  btrfs-control  fuse  stderr  stdout  stdin  fd  core  pts  network_throughput  network_latency  cpu_dma_latency  rtc0  psaux  input  agpgart  hpet  ttyS3  ttyS2  ttyS1  ttyS0  ptmx  snapshot  mcelog  tty63  tty62  tty61  tty60  tty59  tty58  tty57  tty56  tty55  tty54  tty53  tty52  tty51  tty50  tty49  tty48  tty47  tty46  tty45  tty44  tty43  tty42  tty41  tty40  tty39  tty38  tty37  tty36  tty35  tty34  tty33  tty32  tty31  tty30  tty29  tty28  tty27  tty26  tty25  tty24  tty23  tty22  tty21  tty20  tty19  tty18  tty17  tty16  tty15  tty14  tty13  tty12  tty11  tty10  tty9  tty8  tty7  tty6  tty5  tty4  tty3  tty2  tty1  vcsa1  vcs1  vcsa  vcs  tty0  console  tty  oldmem  kmsg  urandom  random  full  zero  port  null  mem  vga_arbiter  
+]0;ziya@ziya-laptop: ~/CS100/rshell/srcziya@ziya-laptop:~/CS100/rshell/src$ ./a.out / /home /dev 0a[K[K-a
+
+/:
+initrd.img  run  dev  ..  root  .pulse-cookie  usr  lib64  var  boot  .pulse  lib  selinux  tmp  bin  sbin  opt  mnt  .  home  proc  vmlinuz  sys  lost+found  etc  srv  media  
+
+/home:
+..  .  ziya  
+
+/dev:
+.  ..  hidraw0  vcsa63  vcs63  vcsa7  vcs7  log  xconsole  loop7  loop6  loop5  loop4  loop3  loop2  loop1  shm  vcsa6  vcs6  vcsa5  vcs5  vcsa4  vcs4  vcsa3  vcs3  vcsa2  vcs2  fb0  root  dri  dvdrw  dvd  cdrw  cdrom  watchdog  sndstat  rfkill  MAKEDEV  snd  uinput  autofs  cpu  loop0  disk  block  sg1  sg0  sda5  sda2  sda1  sr0  sda  bsg  fw0  rtc  bus  char  mapper  ppp  net  loop-control  btrfs-control  fuse  stderr  stdout  stdin  fd  core  pts  network_throughput  network_latency  cpu_dma_latency  rtc0  psaux  input  agpgart  hpet  ttyS3  ttyS2  ttyS1  ttyS0  ptmx  snapshot  mcelog  tty63  tty62  tty61  tty60  tty59  tty58  tty57  tty56  tty55  tty54  tty53  tty52  tty51  tty50  tty49  tty48  tty47  tty46  tty45  tty44  tty43  tty42  tty41  tty40  tty39  tty38  tty37  tty36  tty35  tty34  tty33  tty32  tty31  tty30  tty29  tty28  tty27  tty26  tty25  tty24  tty23  tty22  tty21  tty20  tty19  tty18  tty17  tty16  tty15  tty14  tty13  tty12  tty11  tty10  tty9  tty8  tty7  tty6  tty5  tty4  tty3  tty2  tty1  vcsa1  vcs1  vcsa  vcs  tty0  console  tty  oldmem  kmsg  urandom  random  full  zero  port  null  mem  vga_arbiter  
+]0;ziya@ziya-laptop: ~/CS100/rshell/srcziya@ziya-laptop:~/CS100/rshell/src$ ./a.out / /home /dev -a[K[K[K[K[K[K[K[K[K[K[K[K[K-l
+
+/:
+lstat: No such file or directory
+---------x 1663540288323457296 root Unknown 139739769132096 Dec 31 16:00 initrd.img
+lstat: No such file or directory
+---------x 1663540288323457296 root Unknown 139739769132096 Dec 31 16:00 run
+lstat: No such file or directory
+---------x 1663540288323457296 root Unknown 139739769132096 Dec 31 16:00 dev
+lstat: No such file or directory
+---------x 1663540288323457296 root Unknown 139739769132096 Dec 31 16:00 root
+lstat: No such file or directory
+---------x 1663540288323457296 root Unknown 139739769132096 Dec 31 16:00 usr
+lstat: No such file or directory
+---------x 1663540288323457296 root Unknown 139739769132096 Dec 31 16:00 lib64
+lstat: No such file or directory
+---------x 1663540288323457296 root Unknown 139739769132096 Dec 31 16:00 var
+lstat: No such file or directory
+---------x 1663540288323457296 root Unknown 139739769132096 Dec 31 16:00 boot
+lstat: No such file or directory
+---------x 1663540288323457296 root Unknown 139739769132096 Dec 31 16:00 lib
+lstat: No such file or directory
+---------x 1663540288323457296 root Unknown 139739769132096 Dec 31 16:00 selinux
+lstat: No such file or directory
+---------x 1663540288323457296 root Unknown 139739769132096 Dec 31 16:00 tmp
+lstat: No such file or directory
+---------x 1663540288323457296 root Unknown 139739769132096 Dec 31 16:00 bin
+lstat: No such file or directory
+---------x 1663540288323457296 root Unknown 139739769132096 Dec 31 16:00 sbin
+lstat: No such file or directory
+---------x 1663540288323457296 root Unknown 139739769132096 Dec 31 16:00 opt
+lstat: No such file or directory
+---------x 1663540288323457296 root Unknown 139739769132096 Dec 31 16:00 mnt
+lstat: No such file or directory
+---------x 1663540288323457296 root Unknown 139739769132096 Dec 31 16:00 home
+lstat: No such file or directory
+---------x 1663540288323457296 root Unknown 139739769132096 Dec 31 16:00 proc
+lstat: No such file or directory
+---------x 1663540288323457296 root Unknown 139739769132096 Dec 31 16:00 vmlinuz
+lstat: No such file or directory
+---------x 1663540288323457296 root Unknown 139739769132096 Dec 31 16:00 sys
+lstat: No such file or directory
+---------x 1663540288323457296 root Unknown 139739769132096 Dec 31 16:00 lost+found
+lstat: No such file or directory
+---------x 1663540288323457296 root Unknown 139739769132096 Dec 31 16:00 etc
+lstat: No such file or directory
+---------x 1663540288323457296 root Unknown 139739769132096 Dec 31 16:00 srv
+lstat: No such file or directory
+---------x 1663540288323457296 root Unknown 139739769132096 Dec 31 16:00 media
+
+total 234065476
+]0;ziya@ziya-laptop: ~/CS100/rshell/srcziya@ziya-laptop:~/CS100/rshell/src$ ./a.out / -l[K[K[Khome -l
+
+/home:
+lstat: No such file or directory
+---------x 1663540288323457296 root Unknown 140615222973504 Dec 31 16:00 ziya
+
+total -1003148708
+]0;ziya@ziya-laptop: ~/CS100/rshell/srcziya@ziya-laptop:~/CS100/rshell/src$ ./a.out /home -laR
+
+/home:
+drwxr-xr-x 5 ziya ziya 4096 Nov 11 23:23 ..
+drwxr-xr-x 3 ziya ziya 4096 Nov 11 23:32 .
+lstat: No such file or directory
+drwxr-xr-x 3 ziya ziya 4096 Nov 11 23:32 ziya
+
+total 12
+]0;ziya@ziya-laptop: ~/CS100/rshell/srcziya@ziya-laptop:~/CS100/rshell/src$ ./a.out /home -laR[C.-laR -laR
+
+/home:
+drwxr-xr-x 5 ziya ziya 4096 Nov 11 23:23 ..
+drwxr-xr-x 3 ziya ziya 4096 Nov 11 23:32 .
+lstat: No such file or directory
+drwxr-xr-x 3 ziya ziya 4096 Nov 11 23:32 ziya
+
+total 12
+
+.:
+drwxr-xr-x 5 ziya ziya 4096 Nov 11 23:23 ..
+-rwxr-xr-x 1 ziya ziya 31587 Nov 11 23:32 a.out
+drwxr-xr-x 3 ziya ziya 4096 Nov 11 23:32 .
+-rw-r--r-- 1 ziya ziya 11549 Nov 11 23:14 ls.cpp
+drwxr-xr-x 4 ziya ziya 4096 Nov 11 23:31 test
+-rw-r--r-- 1 ziya ziya 8192 Nov 11 23:34 ls
+-rw-r--r-- 1 ziya ziya 5890 Oct 21 23:42 rshell.cpp
+
+total 72
+]0;ziya@ziya-laptop: ~/CS100/rshell/srcziya@ziya-laptop:~/CS100/rshell/src$ exit
+exit
+
+Script done on Tue 11 Nov 2014 11:35:12 PM PST
