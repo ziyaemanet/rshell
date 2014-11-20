@@ -6,7 +6,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <errno.h>
+#include <fcntl.h>
 #include <sys/wait.h>
+#include <sys/stat.h>
 #include <sys/types.h>
 #include <string.h>
 #include <string>
@@ -61,14 +63,20 @@ int main(){
         int delEnd = 0;
         deque<string>::iterator itr = inputQ.begin();
         bool cont = true;
-
+ 
         while(cont){
             bool ampCon = false;    
             bool pipeCon = false;
+            
             numTerms++;
             chkInp = *itr;
             bool conChk;
             bool run = false;
+            
+            bool inRedir = false;
+            bool outRedir = false;
+            bool out2Redir = false;
+            bool piping = false;
 
             if(chkInp == "exit"){
                 runMain = false;
@@ -88,7 +96,24 @@ int main(){
             else{
                 conChk = false;
             }
+
+
+            if(chkInp == "<"){
+                inRedir = true;
+            }
+            else if(chkInp == ">"){
+                outRedir = true;
+                conChk = true;
+            }
+            else if(chkInp == ">>"){
+                out2Redir = true;
+            }
+            else if(chkInp == "|"){
+                piping = true;
+            }
             
+            //cout << chkInp << endl;
+
             int inputQsize = inputQ.size();
             if(numTerms == inputQsize || conChk){
                 char* argv[999999];
@@ -96,7 +121,7 @@ int main(){
                 if(numTerms == inputQsize){
                
                     if(conChk && chkInp != ";"){
-                        cout << "*ERROR last command not run, check connector useage*" << endl;
+                        cout << "*ERROR last command not run, check connector or redirection useage*" << endl;
                         break;
                     }
                     cont =  false;
@@ -106,13 +131,18 @@ int main(){
                     numTerms--;
                     delEnd = 1;
                 }
-            
-                for(int i = 0;i < numTerms; i++){
-                    argv[i] = new char[inputQ[i].size()+1];
-                    strcpy(argv[i],inputQ[i].c_str());
+           
+                if(inRedir){
+                    
+
                 }
-            
-                argv[numTerms] = NULL;
+                else{
+                    for(int i = 0;i < numTerms; i++){
+                        argv[i] = new char[inputQ[i].size()+1];
+                        strcpy(argv[i],inputQ[i].c_str());
+                    }
+                    argv[numTerms] = '\0';
+                }
           
                 for(int j = 0; j < numTerms + delEnd; j++){
                     inputQ.pop_front();
@@ -124,13 +154,47 @@ int main(){
 		            perror("fork");
 	            }
 	            else if(pid == 0){
+                    if(outRedir){
+                        itr++;
+                        string outFile = *itr;
+                        if(outFile.empty()){
+                            cout << "*ERROR missing outfile*" << endl;
+                        }
+                        else{
+                            int fdOut = open(outFile.c_str(),O_WRONLY|O_CREAT|O_TRUNC,S_IRUSR|S_IWUSR); 
+                            if(fdOut == -1){
+                                perror("open");
+                            }
+                            else{
+                                int dupChk = dup2(fdOut,1);
+                                
+                                if(dupChk == -1){
+                                    perror("dup2");
+                                }
+                            }
+                            
+                            int clsChk = close(fdOut);
+                            
+                            if(clsChk == -1){
+                                perror("close");
+                            }
+                        }
+                    }
+                    
                     execvp(argv[0],argv);
 		            perror("execvp");
 	            }
 	            else{
                     int status;
 	    	        int eWait = wait(&status);
-		            
+                    
+                    if(outRedir){
+                        inputQ.pop_front();
+                        if(inputQ.size() == 0){
+                            break;
+                        }
+                    }
+
                     if(eWait == -1){
 			            perror("wait");
 		            }   
@@ -191,12 +255,6 @@ string strtokPrep(string inString){
                     inString.insert(i+3," ");
                     i += 2;
                 }
-                else{
-                    cout << "*ERROR using connector ||*" << endl;
-                }
-           }
-           else{
-               cout << "*ERROR using connector ||*" << endl;
            }
         }
         
