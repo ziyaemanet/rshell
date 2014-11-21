@@ -1,0 +1,276 @@
+Script started on Thu 20 Nov 2014 11:10:37 PM PST
+]0;ziya@ziya-laptop: ~/CS100/rshell/srcziya@ziya-laptop:~/CS100/rshell/src$ .a.[K[K/a.out
+getlogin_r: No such process
+@ziya-laptop$ ls
+a.out  cp.cpp  ls.cpp  piping  rshell.cpp
+@ziya-laptop$ ls - l  l > testfile1
+@ziya-laptop$ ls
+@ziya-laptop$ a.out  cp.cpp  ls.cpp  piping  rshell.cpp  testfile1
+cart  t testfile
+@ziya-laptop$ cat: testfile: No such file or directory
+cat tesf tfile2 1
+@ziya-laptop$ total 68
+-rwxr-xr-x 1 ziya ziya 35313 Nov 20 23:10 a.out
+-rw-r--r-- 1 ziya ziya  3723 Nov 12 00:51 cp.cpp
+-rw-r--r-- 1 ziya ziya 11549 Nov 12 00:51 ls.cpp
+-rw-r--r-- 1 ziya ziya     0 Nov 20 23:10 piping
+-rw-r--r-- 1 ziya ziya 12341 Nov 20 23:00 rshell.cpp
+-rw------- 1 ziya ziya     0 Nov 20 23:10 testfile1
+ls
+@ziya-laptop$ a.out  cp.cpp  ls.cpp  piping  rshell.cpp  testfile1
+ls
+@ziya-laptop$ a.out  cp.cpp  ls.cpp  piping  rshell.cpp  testfile1
+ls
+@ziya-laptop$ a.out  cp.cpp  ls.cpp  piping  rshell.cpp  testfile1
+cat   echo add   ls       ls - >> testfile1
+@ziya-laptop$ cat testfile
+@ziya-laptop$ cat: testfile: No such file or directory
+cat testfile1
+@ziya-laptop$ total 68
+-rwxr-xr-x 1 ziya ziya 35313 Nov 20 23:10 a.out
+-rw-r--r-- 1 ziya ziya  3723 Nov 12 00:51 cp.cpp
+-rw-r--r-- 1 ziya ziya 11549 Nov 12 00:51 ls.cpp
+-rw-r--r-- 1 ziya ziya     0 Nov 20 23:10 piping
+-rw-r--r-- 1 ziya ziya 12341 Nov 20 23:00 rshell.cpp
+-rw------- 1 ziya ziya     0 Nov 20 23:10 testfile1
+a.out
+cp.cpp
+ls.cpp
+piping
+rshell.cpp
+testfile1
+ls
+@ziya-laptop$ a.out  cp.cpp  ls.cpp  piping  rshell.cpp  testfile1
+ls    cat < testfile1
+@ziya-laptop$ total 68
+-rwxr-xr-x 1 ziya ziya 35313 Nov 20 23:10 a.out
+-rw-r--r-- 1 ziya ziya  3723 Nov 12 00:51 cp.cpp
+-rw-r--r-- 1 ziya ziya 11549 Nov 12 00:51 ls.cpp
+-rw-r--r-- 1 ziya ziya     0 Nov 20 23:10 piping
+-rw-r--r-- 1 ziya ziya 12341 Nov 20 23:00 rshell.cpp
+-rw------- 1 ziya ziya     0 Nov 20 23:10 testfile1
+a.out
+cp.cpp
+ls.cpp
+piping
+rshell.cpp
+testfile1
+cat testfile1
+@ziya-laptop$ total 68
+-rwxr-xr-x 1 ziya ziya 35313 Nov 20 23:10 a.out
+-rw-r--r-- 1 ziya ziya  3723 Nov 12 00:51 cp.cpp
+-rw-r--r-- 1 ziya ziya 11549 Nov 12 00:51 ls.cpp
+-rw-r--r-- 1 ziya ziya     0 Nov 20 23:10 piping
+-rw-r--r-- 1 ziya ziya 12341 Nov 20 23:00 rshell.cpp
+-rw------- 1 ziya ziya     0 Nov 20 23:10 testfile1
+a.out
+cp.cpp
+ls.cpp
+piping
+rshell.cpp
+testfile1
+ls -la>  > testfile1
+@ziya-laptop$ ls
+@ziya-laptop$ a.out  cp.cpp  ls.cpp  piping  rshell.cpp  testfile1
+ls
+@ziya-laptop$ a.out  cp.cpp  ls.cpp  piping  rshell.cpp  testfile1
+cat testfile1
+@ziya-laptop$ total 112
+drwxr-xr-x 2 ziya ziya  4096 Nov 20 23:10 .
+drwxr-xr-x 5 ziya ziya  4096 Nov 20 11:50 ..
+-rwxr-xr-x 1 ziya ziya 35313 Nov 20 23:10 a.out
+-rw-r--r-- 1 ziya ziya  3723 Nov 12 00:51 cp.cpp
+-rw-r--r-- 1 ziya ziya 11549 Nov 12 00:51 ls.cpp
+-rw-r--r-- 1 ziya ziya     0 Nov 20 23:10 piping
+-rw-r--r-- 1 ziya ziya 12341 Nov 20 23:00 rshell.cpp
+-rw-r--r-- 1 ziya ziya 32768 Nov 20 23:00 .rshell.cpp.swp
+-rw------- 1 ziya ziya     0 Nov 20 23:13 testfile1
+testfi      cat < testfile >    1 > testfile2
+@ziya-laptop$ total 112
+drwxr-xr-x 2 ziya ziya  4096 Nov 20 23:10 .
+drwxr-xr-x 5 ziya ziya  4096 Nov 20 11:50 ..
+-rwxr-xr-x 1 ziya ziya 35313 Nov 20 23:10 a.out
+-rw-r--r-- 1 ziya ziya  3723 Nov 12 00:51 cp.cpp
+-rw-r--r-- 1 ziya ziya 11549 Nov 12 00:51 ls.cpp
+-rw-r--r-- 1 ziya ziya     0 Nov 20 23:10 piping
+-rw-r--r-- 1 ziya ziya 12341 Nov 20 23:00 rshell.cpp
+-rw-r--r-- 1 ziya ziya 32768 Nov 20 23:00 .rshell.cpp.swp
+-rw------- 1 ziya ziya     0 Nov 20 23:13 testfile1
+ls
+@ziya-laptop$ a.out  cp.cpp  ls.cpp  piping  rshell.cpp  testfile1  testfile2
+cat testfile2
+@ziya-laptop$ ls
+@ziya-laptop$ a.out  cp.cpp  ls.cpp  piping  rshell.cpp  testfile1  testfile2
+ls
+@ziya-laptop$ a.out  cp.cpp  ls.cpp  piping  rshell.cpp  testfile1  testfile2
+cat   ls -a> testfile1
+@ziya-laptop$ ls: invalid option -- '>'
+Try `ls --help' for more information.
+ls
+@ziya-laptop$ a.out  cp.cpp  ls.cpp  piping  rshell.cpp  testfile1  testfile2
+ls -a  >  
+*ERROR last command not run, check connector or redirection useage*
+@ziya-laptop$ ls >>
+*ERROR last command not run, check connector or redirection useage*
+@ziya-laptop$ ls >> testfile3
+@ziya-laptop$ cat testfile3
+@ziya-laptop$ a.out
+cp.cpp
+ls.cpp
+piping
+rshell.cpp
+testfile1
+testfile2
+testfile3
+ls
+@ziya-laptop$ a.out  cp.cpp  ls.cpp  piping  rshell.cpp  testfile1  testfile2  testfile3
+ls>>cat      -  l>>testfile4 3
+@ziya-laptop$ ls: invalid option -- '>'
+Try `ls --help' for more information.
+ls -l>> testfile4 3
+@ziya-laptop$ ls: invalid option -- '>'
+Try `ls --help' for more information.
+;s    ls -l >>testfile3
+@ziya-laptop$ ls: cannot access >>testfile3: No such file or directory
+ls -l> testfile4 3
+@ziya-laptop$ ls: invalid option -- '>'
+Try `ls --help' for more information.
+ls -l test     >testfile3
+@ziya-laptop$ ls: invalid option -- '>'
+Try `ls --help' for more information.
+ls -l >testfile4
+@ziya-laptop$ ls: cannot access >testfile4: No such file or directory
+ls -l > testfile4 3
+@ziya-laptop$ cat testfile3
+@ziya-laptop$ total 76
+-rwxr-xr-x 1 ziya ziya 35313 Nov 20 23:10 a.out
+-rw-r--r-- 1 ziya ziya  3723 Nov 12 00:51 cp.cpp
+-rw-r--r-- 1 ziya ziya 11549 Nov 12 00:51 ls.cpp
+-rw-r--r-- 1 ziya ziya  4096 Nov 20 23:14 piping
+-rw-r--r-- 1 ziya ziya 12341 Nov 20 23:00 rshell.cpp
+-rw------- 1 ziya ziya   457 Nov 20 23:13 testfile1
+-rw------- 1 ziya ziya     0 Nov 20 23:13 testfile2
+-rw------- 1 ziya ziya     0 Nov 20 23:17 testfile3
+cat testfile1 3         < testfile4 3 >> testfile2
+@ziya-laptop$ total 76
+-rwxr-xr-x 1 ziya ziya 35313 Nov 20 23:10 a.out
+-rw-r--r-- 1 ziya ziya  3723 Nov 12 00:51 cp.cpp
+-rw-r--r-- 1 ziya ziya 11549 Nov 12 00:51 ls.cpp
+-rw-r--r-- 1 ziya ziya  4096 Nov 20 23:14 piping
+-rw-r--r-- 1 ziya ziya 12341 Nov 20 23:00 rshell.cpp
+-rw------- 1 ziya ziya   457 Nov 20 23:13 testfile1
+-rw------- 1 ziya ziya     0 Nov 20 23:13 testfile2
+-rw------- 1 ziya ziya     0 Nov 20 23:17 testfile3
+cat testfile2
+@ziya-laptop$ ls
+@ziya-laptop$ a.out  cp.cpp  ls.cpp  piping  rshell.cpp  testfile1  testfile2  testfile3
+ls -l>
+@ziya-laptop$ ls: invalid option -- '>'
+Try `ls --help' for more information.
+ls -l > testfile4          
+*ERROR last command not run, check connector or redirection useage*
+@ziya-laptop$ ls -    cat <
+*ERROR last command not run, check connector or redirection useage*
+@ziya-laptop$ cat<
+@ziya-laptop$ execvp: No such file or directory
+@ziya-laptop$ cat<  < testfile2 1 3
+@ziya-laptop$ total 76
+-rwxr-xr-x 1 ziya ziya 35313 Nov 20 23:10 a.out
+-rw-r--r-- 1 ziya ziya  3723 Nov 12 00:51 cp.cpp
+-rw-r--r-- 1 ziya ziya 11549 Nov 12 00:51 ls.cpp
+-rw-r--r-- 1 ziya ziya  4096 Nov 20 23:14 piping
+-rw-r--r-- 1 ziya ziya 12341 Nov 20 23:00 rshell.cpp
+-rw------- 1 ziya ziya   457 Nov 20 23:13 testfile1
+-rw------- 1 ziya ziya     0 Nov 20 23:13 testfile2
+-rw------- 1 ziya ziya     0 Nov 20 23:17 testfile3
+cat <testfile4 3
+cat: <testfile3: No such file or directory
+@ziya-laptop$ cat test     < testfile3
+@ziya-laptop$ execvp: No such file or directory
+@ziya-laptop$ cat < testfile3 grep     | gre      | grep cpp
+total 76
+-rwxr-xr-x 1 ziya ziya 35313 Nov 20 23:10 a.out
+-rw-r--r-- 1 ziya ziya  3723 Nov 12 00:51 cp.cpp
+-rw-r--r-- 1 ziya ziya 11549 Nov 12 00:51 ls.cpp
+-rw-r--r-- 1 ziya ziya  4096 Nov 20 23:14 piping
+-rw-r--r-- 1 ziya ziya 12341 Nov 20 23:00 rshell.cpp
+-rw------- 1 ziya ziya   457 Nov 20 23:13 testfile1
+-rw------- 1 ziya ziya     0 Nov 20 23:13 testfile2
+-rw------- 1 ziya ziya     0 Nov 20 23:17 testfile3
+cat testfil4 e3 | grep cpp
+@ziya-laptop$ ls
+@ziya-laptop$ a.out  cp.cpp  ls.cpp  piping  rshell.cpp  testfile1  testfile2  testfile3
+ls
+@ziya-laptop$ a.out  cp.cpp  ls.cpp  piping  rshell.cpp  testfile1  testfile2  testfile3
+testfi      cat testfile3 |
+*ERROR last command not run, check connector or redirection useage*
+@ziya-laptop$ cat tesfile    tfile| grep
+cat: testfile|: No such file or directory
+cat: grep: No such file or directory
+@ziya-laptop$ cat testi     < testfile          testfile3 | grep
+ls
+ls
+cat
+^C
+]0;ziya@ziya-laptop: ~/CS100/rshell/srcziya@ziya-laptop:~/CS100/rshell/src$ ls
+[0m[01;32ma.out[0m  cp.cpp  ls.cpp  piping  rshell.cpp  testfile1  testfile2  testfile3
+]0;ziya@ziya-laptop: ~/CS100/rshell/srcziya@ziya-laptop:~/CS100/rshell/src$ .a/o[K[K[K[K./a.out
+getlogin_r: No such process
+@ziya-laptop$ ls
+a.out  cp.cpp  ls.cpp  piping  rshell.cpp  testfile1  testfile2  testfile3
+@ziya-laptop$ pwd
+/home/ziya/CS100/rshell/src
+@ziya-laptop$ pwd   >   > testfile4
+@ziya-laptop$ cat testfile4
+@ziya-laptop$ /home/ziya/CS100/rshell/src
+ls
+@ziya-laptop$ a.out  cp.cpp  ls.cpp  piping  rshell.cpp  testfile1  testfile2  testfile3  testfile4
+pwd >> testfile5
+@ziya-laptop$ cat testfile5
+@ziya-laptop$ /home/ziya/CS100/rshell/src
+ls
+@ziya-laptop$ a.out	ls.cpp	rshell.cpp  testfile2  testfile4
+cp.cpp	piping	testfile1   testfile3  testfile5
+echo      cat testfile4 3
+@ziya-laptop$ total 76
+-rwxr-xr-x 1 ziya ziya 35313 Nov 20 23:10 a.out
+-rw-r--r-- 1 ziya ziya  3723 Nov 12 00:51 cp.cpp
+-rw-r--r-- 1 ziya ziya 11549 Nov 12 00:51 ls.cpp
+-rw-r--r-- 1 ziya ziya  4096 Nov 20 23:14 piping
+-rw-r--r-- 1 ziya ziya 12341 Nov 20 23:00 rshell.cpp
+-rw------- 1 ziya ziya   457 Nov 20 23:13 testfile1
+-rw------- 1 ziya ziya     0 Nov 20 23:13 testfile2
+-rw------- 1 ziya ziya     0 Nov 20 23:17 testfile3
+cat f testfile4 3 < gre              <    < testfile4 3 < grep cpp
+open: No such file or directory
+total 76
+-rwxr-xr-x 1 ziya ziya 35313 Nov 20 23:10 a.out
+-rw-r--r-- 1 ziya ziya  3723 Nov 12 00:51 cp.cpp
+-rw-r--r-- 1 ziya ziya 11549 Nov 12 00:51 ls.cpp
+-rw-r--r-- 1 ziya ziya  4096 Nov 20 23:14 piping
+-rw-r--r-- 1 ziya ziya 12341 Nov 20 23:00 rshell.cpp
+-rw------- 1 ziya ziya   457 Nov 20 23:13 testfile1
+-rw------- 1 ziya ziya     0 Nov 20 23:13 testfile2
+-rw------- 1 ziya ziya     0 Nov 20 23:17 testfile3
+@ziya-laptop$ close: Bad file descriptor
+cat >    ec   echo test > testfile4 > test        6 > testfile7
+@ziya-laptop$ ls
+ls
+ls
+^C
+]0;ziya@ziya-laptop: ~/CS100/rshell/srcziya@ziya-laptop:~/CS100/rshell/src$ ls
+[0m[01;32ma.out[0m   ls.cpp  rshell.cpp  testfile2  testfile4  testfile6
+cp.cpp  piping  testfile1   testfile3  testfile5  testfile7
+]0;ziya@ziya-laptop: ~/CS100/rshell/srcziya@ziya-laptop:~/CS100/rshell/src$ ./a.out
+getlogin_r: No such process
+@ziya-laptop$ ls
+a.out	ls.cpp	rshell.cpp  testfile2  testfile4  testfile6
+cp.cpp	piping	testfile1   testfile3  testfile5  testfile7
+@ziya-laptop$ cat testfile7
+@ziya-laptop$ ca t  t testfile5
+/home/ziya/CS100/rshell/src
+@ziya-laptop$ exit
+]0;ziya@ziya-laptop: ~/CS100/rshell/srcziya@ziya-laptop:~/CS100/rshell/src$ exit
+exit
+
+Script done on Thu 20 Nov 2014 11:23:53 PM PST

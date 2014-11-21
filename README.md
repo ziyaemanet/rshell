@@ -30,6 +30,26 @@ BUGS/KNOWN ISSUE/COMMENTS:
 
     9. ls will notify of undefined parameters
     
-    10.ls output is not ordered
+   10. ls output is not ordered
     
-    11. Many more.
+   11. "|" does not function, use will cause undefined behaviour and rshell may crash
+
+   12. >, >>, and < redirections functionality present
+
+   13. using redirections in the following structure will not function:
+       cat < testfile > testfile2, although testfile2 will be created
+   
+   14. Failing to add spaces before or after >, >>, <, or | will give error messagesfrom exevp or called program.
+
+   15. Misalignment with output after using > or >>
+    
+   16. Using any >, >>, <, or | then failing to add a following parameter will give error message to check usage.
+
+   17. Using multiple > will cause each file specified to be created but only first file will recieve ouput.
+   
+   18. Many more.
+
+
+
+
+
