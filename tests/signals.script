@@ -1,0 +1,300 @@
+Script started on Fri 05 Dec 2014 11:13:10 PM PST
+]0;ziya@ziya-laptop: ~/CS100/rshell/srcziya@ziya-laptop:~/CS100/rshell/src$ exitvalgrind --leak-check=yes /home/ziya/CS100/rshell/srrc/a.out[A]0;ziya@ziya-laptop: ~/CS100/rshell/srcziya@ziya-laptop:~/CS100/rshell/src$ [4Pg++ -Wall -Werror -ansi -pedantic -g rshell.cpp
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+]0;ziya@ziya-laptop: ~/CS100/rshell/srcziya@ziya-laptop:~/CS100/rshell/src$ cppcheck rshell.cpp
+Checking rshell.cpp...
+]0;ziya@ziya-laptop: ~/CS100/rshell/srcziya@ziya-laptop:~/CS100/rshell/src$ .a[K/a.out
+getlogin_r: No such process
+@ziya-laptop:/home/ziya/CS100/rshell/src$ kss
+execv: No such file or directory
+@ziya-laptop:/home/ziya/CS100/rshell/src$ ls
+a.out  cp.cpp  ls.cpp  rshell.cpp  signals.script
+@ziya-laptop:/home/ziya/CS100/rshell/src$ cd ..
+@ziya-laptop:/home/ziya/CS100/rshell$ cd ..
+@ziya-laptop:/home/ziya/CS100$ cd ..
+@ziya-laptop:/home/ziya$ cd ..
+@ziya-laptop:/home$ cd ziya
+@ziya-laptop:/home/ziya$ ziya      cd CA1  s0  S100
+@ziya-laptop:/home/ziya/CS100$ cd rshell
+@ziya-laptop:/home/ziya/CS100/rshell$ cd src
+@ziya-laptop:/home/ziya/CS100/rshell/src$ ls
+a.out  cp.cpp  ls.cpp  rshell.cpp  signals.script
+@ziya-laptop:/home/ziya/CS100/rshell/src$ true && cd ..
+@ziya-laptop:/home/ziya/CS100/rshell$ cd .. && ls
+@ziya-laptop:/home/ziya/CS100$ true &&    || ls || cd ..
+@ziya-laptop:/home/ziya/CS100$ ls && cd ..
+instructor-ucr-cs100  quiz03  rshell
+@ziya-laptop:/home/ziya$ cd .. && ls
+@ziya-laptop:/home$ cd ziya
+@ziya-laptop:/home/ziya$ cd CS1--
+chdir: No such file or directory
+@ziya-laptop:/home/ziya$ cd CS100
+@ziya-laptop:/home/ziya/CS100$ cdwdaad      .. / / / / / / / / / / / / / 
+@ziya-laptop:/home/ziya$ cd .. asdas dasdasdadasdsad adadada
+@ziya-laptop:/home$ cd /
+@ziya-laptop:/$ cd home
+@ziya-laptop:/home$ cd ziya
+@ziya-laptop:/home/ziya$ cd rshell      SC  CS1--  00
+@ziya-laptop:/home/ziya/CS100$ cd .
+@ziya-laptop:/home/ziya/CS100$ c    d  ls  cd 211212
+chdir: No such file or directory
+@ziya-laptop:/home/ziya/CS100$ cd 
+chdir: Bad address
+@ziya-laptop:/home/ziya/CS100$ cd ;
+chdir: Bad address
+@ziya-laptop:/home/ziya/CS100$ c  d ; ls
+chdir: Bad address
+@ziya-laptop:/home/ziya/CS100$ cd .. ; ls
+@ziya-laptop:/home/ziya$ ls ; cd ..
+CS100  Desktop	Downloads
+@ziya-laptop:/home$ ls && cd ..
+ziya
+@ziya-laptop:/$ cd home
+@ziya-laptop:/home$ cd ziya
+@ziya-laptop:/home/ziya$ cdCS   CS100
+@ziya-laptop:/home/ziya/CS100$ cd R rshell
+@ziya-laptop:/home/ziya/CS100/rshell$ ls
+LICENSE  Makefile  README.md  repeat  src  tests
+@ziya-laptop:/home/ziya/CS100/rshell$ cd repeart  t
+@ziya-laptop:/home/ziya/CS100/rshell/repeat$ ls
+a.out  repeat.cpp
+@ziya-laptop:/home/ziya/CS100/rshell/repeat$ cat
+test
+test
+^C@ziya-laptop:/home/ziya/CS100/rshell/repeat$ ls
+a.out  repeat.cpp
+@ziya-laptop:/home/ziya/CS100/rshell/repeat$ cat
+test
+test
+^C@ziya-laptop:/home/ziya/CS100/rshell/repeat$ gdb
+GNU gdb (GDB) 7.4.1-debian
+Copyright (C) 2012 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+(gdb) ^CQuit
+(gdb) quit
+@ziya-laptop:/home/ziya/CS100/rshell/repeat$ tee
+re  test
+test
+^C@ziya-laptop:/home/ziya/CS100/rshell/repeat$ ls
+a.out  repeat.cpp
+@ziya-laptop:/home/ziya/CS100/rshell/repeat$ touch     test    echo test > testfile
+@ziya-laptop:/home/ziya/CS100/rshell/repeat$ ls
+a.out  repeat.cpp  testfile
+@ziya-laptop:/home/ziya/CS100/rshell/repeat$ cat testfile
+test
+@ziya-laptop:/home/ziya/CS100/rshell/repeat$ tee   testfile |          echo testfile
+testfile
+@ziya-laptop:/home/ziya/CS100/rshell/repeat$ test    echo /testfi            cat testfile | teee testcopy           copy   t  testcopy
+ls
+ls
+tee is on
+tee is on
+^Z@ziya-laptop:/home/ziya/CS100/rshell/repeat$ ls
+a.out  repeat.cpp  testcopy  testfile
+@ziya-laptop:/home/ziya/CS100/rshell/repeat$ ca  t testcopy
+ls
+tee is on
+@ziya-laptop:/home/ziya/CS100/rshell/repeat$ .a /a.out
+execv: No such file or directory
+@ziya-laptop:/home/ziya/CS100/rshell/repeat$ ls
+a.out  repeat.cpp  testcopy  testfile
+@ziya-laptop:/home/ziya/CS100/rshell/repeat$ ./a.out
+execv: No such file or directory
+@ziya-laptop:/home/ziya/CS100/rshell/repeat$ fg
+tee
+^C@ziya-laptop:/home/ziya/CS100/rshell/repeat$ ls
+a.out  repeat.cpp  testcopy  testfile
+@ziya-laptop:/home/ziya/CS100/rshell/repeat$ fg
+@ziya-laptop:/home/ziya/CS100/rshell/repeat$ fg
+@ziya-laptop:/home/ziya/CS100/rshell/repeat$ cat
+test
+test
+^Z@ziya-laptop:/home/ziya/CS100/rshell/repeat$ fg
+cat
+test
+test
+^Z@ziya-laptop:/home/ziya/CS100/rshell/repeat$ gdb
+GNU gdb (GDB) 7.4.1-debian
+Copyright (C) 2012 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+(gdb) ^Z@ziya-laptop:/home/ziya/CS100/rshell/repeat$ fg
+gdb
+quit
+@ziya-laptop:/home/ziya/CS100/rshell/repeat$ fg
+@ziya-laptop:/home/ziya/CS100/rshell/repeat$ fg
+@ziya-laptop:/home/ziya/CS100/rshell/repeat$ cat 
+^Z@ziya-laptop:/home/ziya/CS100/rshell/repeat$ fg
+cat
+^Z@ziya-laptop:/home/ziya/CS100/rshell/repeat$ gdb fg   
+GNU gdb (GDB) 7.4.1-debian
+Copyright (C) 2012 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+(gdb) ^Z@ziya-laptop:/home/ziya/CS100/rshell/repeat$ fg 1
+gdb
+^Z@ziya-laptop:/home/ziya/CS100/rshell/repeat$ fg 2
+@ziya-laptop:/home/ziya/CS100/rshell/repeat$ fg 1
+@ziya-laptop:/home/ziya/CS100/rshell/repeat$ ls
+a.out  repeat.cpp  testcopy  testfile
+@ziya-laptop:/home/ziya/CS100/rshell/repeat$ ca  fg  cat
+test
+test
+^Z@ziya-laptop:/home/ziya/CS100/rshell/repeat$ bg
+cat
+@ziya-laptop:/home/ziya/CS100/rshell/repeat$ test
+@ziya-laptop:/home/ziya/CS100/rshell/repeat$ cat   exit    cat
+cat
+test
+test
+test
+test
+^Z^Z^Cexit
+cat 25364
+Quit
+(gdb) ]0;ziya@ziya-laptop: ~/CS100/rshell/srcziya@ziya-laptop:~/CS100/rshell/src$ ls
+[0m[01;32ma.out[0m  cp.cpp  ls.cpp  rshell.cpp  signals.script
+]0;ziya@ziya-laptop: ~/CS100/rshell/srcziya@ziya-laptop:~/CS100/rshell/src$ .a.[K[K/a.out
+getlogin_r: No such process
+@ziya-laptop:/home/ziya/CS100/rshell/src$ cat   #crashed at end
+Segmentation fault
+]0;ziya@ziya-laptop: ~/CS100/rshell/srcziya@ziya-laptop:~/CS100/rshell/src$ ## c[K[K[K c[K[Kcrashed at end
+]0;ziya@ziya-laptop: ~/CS100/rshell/srcziya@ziya-laptop:~/CS100/rshell/src$ #restarting
+]0;ziya@ziya-laptop: ~/CS100/rshell/srcziya@ziya-laptop:~/CS100/rshell/src$ .a[K/a.oout[K[Ku[K[Kut
+getlogin_r: No such process
+@ziya-laptop:/home/ziya/CS100/rshell/src$ cat
+test
+test
+f ^Z@ziya-laptop:/home/ziya/CS100/rshell/src$ fg
+cat
+test
+test
+^Z@ziya-laptop:/home/ziya/CS100/rshell/src$ ls
+a.out  cp.cpp  ls.cpp  rshell.cpp  signals.script
+@ziya-laptop:/home/ziya/CS100/rshell/src$ fg
+@ziya-laptop:/home/ziya/CS100/rshell/src$ pwd
+/home/ziya/CS100/rshell/src
+@ziya-laptop:/home/ziya/CS100/rshell/src$ #fg fa      tre ue && #fg a fails sometimes
+*ERROR last command not run, check connector or redirection useage*
+@ziya-laptop:/home/ziya/CS100/rshell/src$ cat
+^Z@ziya-laptop:/home/ziya/CS100/rshell/src$ fg
+cat
+test
+test
+^Z@ziya-laptop:/home/ziya/CS100/rshell/src$ fg
+@ziya-laptop:/home/ziya/CS100/rshell/src$ exit
+]0;ziya@ziya-laptop: ~/CS100/rshell/srcziya@ziya-laptop:~/CS100/rshell/src$ .a.[K[K/a.out
+getlogin_r: No such process
+@ziya-laptop:/home/ziya/CS100/rshell/src$ cat
+^Z@ziya-laptop:/home/ziya/CS100/rshell/src$ gdb
+GNU gdb (GDB) 7.4.1-debian
+Copyright (C) 2012 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+(gdb) ^Z@ziya-laptop:/home/ziya/CS100/rshell/src$ cat
+^Z@ziya-laptop:/home/ziya/CS100/rshell/src$ fg  c gdb
+GNU gdb (GDB) 7.4.1-debian
+Copyright (C) 2012 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+(gdb) ^Z@ziya-laptop:/home/ziya/CS100/rshell/src$ fg 1
+cat
+numbers work occasionally
+numbers work occasionally
+^Z@ziya-laptop:/home/ziya/CS100/rshell/src$ fg 2
+gdb
+as it is [K[K[K[K[K[K[K[K[Kquit
+@ziya-laptop:/home/ziya/CS100/rshell/src$ fg
+cat
+^C@ziya-laptop:/home/ziya/CS100/rshell/src$ fg
+kill: No such process
+cat
+wait: No child processes
+@ziya-laptop:/home/ziya/CS100/rshell/src$ exit
+Quit
+(gdb) ]0;ziya@ziya-laptop: ~/CS100/rshell/srcziya@ziya-laptop:~/CS100/rshell/src$ ]0;ziya@ziya-laptop: ~/CS100/rshell/srcziya@ziya-laptop:~/CS100/rshell/src$ bash: kill%%: command not found
+]0;ziya@ziya-laptop: ~/CS100/rshell/srcziya@ziya-laptop:~/CS100/rshell/src$ bash: kill: %%: no such job
+]0;ziya@ziya-laptop: ~/CS100/rshell/srcziya@ziya-laptop:~/CS100/rshell/src$   PID TTY          TIME CMD
+ 3051 ?        00:00:00 x-session-manag
+ 3092 ?        00:00:00 ssh-agent
+ 3095 ?        00:00:00 dbus-launch
+ 3096 ?        00:00:23 dbus-daemon
+ 3133 ?        00:00:00 start_kdeinit
+ 3134 ?        00:00:00 kdeinit4
+ 3135 ?        00:00:00 klauncher
+ 3137 ?        00:02:29 kded4
+ 3141 ?        00:00:00 kglobalaccel
+ 3143 ?        00:00:00 kwalletd
+ 3147 ?        00:00:09 kactivitymanage
+ 3152 ?        00:00:00 kwrapper4
+ 3154 ?        00:00:01 ksmserver
+ 3189 ?        00:10:30 kwin
+ 3323 ?        00:00:05 knotify4
+ 3326 ?        00:14:22 plasma-desktop
+ 3329 ?        00:00:00 ksysguardd
+ 3333 ?        00:00:00 kuiserver
+ 3335 ?        00:00:02 akonadi_control
+ 3337 ?        00:00:05 akonadiserver
+ 3340 ?        00:03:14 mysqld
+ 3356 ?        00:00:18 kaccess
+ 3369 ?        00:00:00 nepomukserver
+ 3373 ?        00:00:58 nepomukservices
+ 3375 ?        00:00:33 krunner
+ 3379 ?        00:07:29 pulseaudio
+ 3400 ?        00:00:00 akonadi_contact
+ 3401 ?        00:00:01 kmix
+ 3403 ?        00:00:00 akonadi_ical_re
+ 3405 ?        00:00:00 akonadi_maildir
+ 3406 ?        00:00:03 nepomukcontroll
+ 3407 ?        00:00:00 akonadi_maildis
+ 3427 ?        00:04:11 virtuoso-t
+ 3451 ?        00:00:00 polkit-kde-auth
+ 3460 ?        00:00:01 klipper
+ 3461 ?        00:00:01 korgac
+ 3470 ?        00:00:17 nepomukservices
+ 3471 ?        00:00:14 nepomukservices
+ 3472 ?        00:00:00 nepomukservices
+ 3473 ?        00:00:10 nepomukservices
+ 3516 ?        00:00:00 gconfd-2
+ 3529 ?        00:00:00 gvfsd
+ 3779 ?        00:00:00 apper-sentinel
+20822 ?        00:04:59 konsole
+20826 pts/1    00:00:00 bash
+22170 pts/3    00:00:00 bash
+22216 pts/3    00:00:00 ssh
+24758 pts/2    00:00:00 bash
+25245 ?        00:00:01 dolphin
+25258 pts/1    00:00:00 script
+25259 pts/1    00:00:00 script
+25260 pts/4    00:00:00 bash
+25316 pts/2    00:00:00 vim
+25383 pts/4    00:00:00 ps
+]0;ziya@ziya-laptop: ~/CS100/rshell/srcziya@ziya-laptop:~/CS100/rshell/src$ exit
+
+Script done on Fri 05 Dec 2014 11:35:27 PM PST

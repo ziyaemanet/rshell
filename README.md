@@ -47,7 +47,31 @@ BUGS/KNOWN ISSUE/COMMENTS:
 
    17. Using multiple > will cause each file specified to be created but only first file will recieve ouput.
    
-   18. Many more.
+   18. cd will ignore parameters other than the first
+
+   19. cd only will give bad address error
+
+   20. cd and the ; connector do not work
+
+   21. cd and && connector work together
+
+   22. cd will notify of invalid directories
+
+   23. ctrl c seems to affect all background processes if many are open
+   
+   24. tee and ls commands are accessible via PATH variable
+
+   25. tee and pipe connector do not function together, only tee will be turned on
+
+   26. current directory is now printed 
+
+   27. ctrl z may fail to function at times but will generally work
+
+   28. fg,bg command may fail to function at times but will generally work
+   
+   29. fg,bg followed by a number tends not to work most of the time
+
+   30. Many more.
 
 
 
